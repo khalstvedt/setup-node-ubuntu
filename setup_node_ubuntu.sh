@@ -28,7 +28,7 @@ sudo apt-get -y install python-pip
 sudo pip install virtualenv virtualenvwrapper
 
 # install rvm, ruby, rails
-curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby --rails
+curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
 source /usr/local/rvm/scripts/rvm
 printf "source /usr/local/rvm/scripts/rvm\n" >> ~/.bashrc
 
