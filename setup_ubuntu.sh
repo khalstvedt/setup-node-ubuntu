@@ -37,7 +37,7 @@ curl https://install.meteor.com | /bin/sh
 git config --global user.email "khalstvedt@gmail.com"
 git config --global user.name "Kyle Halstvedt"
 
-printf "Setup successfully completed!\nInstalled:\nemacs\nmongodb\nnvm, node\npip, venv\nrvm,ruby\nmeteor"
+printf "Setup successfully completed!\nInstalled:\nemacs\nmongodb\nnvm, node\npip, venv\nrvm,ruby\nmeteor\n"
 
 # enter interactive session to preserve screen session
 exec bash
