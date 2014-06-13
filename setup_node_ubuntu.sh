@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# start screen session
+screen -S setup
+
 # get mongo key
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 # write mongo list file
