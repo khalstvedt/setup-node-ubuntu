@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# start screen session
-screen -S setup
-
 # get mongo key
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 # write mongo list file
@@ -41,3 +38,8 @@ curl https://install.meteor.com | /bin/sh
 # configure git
 git config --global user.email "khalstvedt@gmail.com"
 git config --global user.name "Kyle Halstvedt"
+
+echo "Customization successfully completed!"
+
+# enter interactive session to preserve screen session
+exec bash
