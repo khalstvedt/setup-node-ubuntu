@@ -27,10 +27,9 @@ nvm install 0.11
 sudo apt-get -y install python-pip
 sudo pip install virtualenv virtualenvwrapper
 
-# install rvm, ruby, rails
+# install rvm, ruby
 curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
 source /usr/local/rvm/scripts/rvm
-printf "source /usr/local/rvm/scripts/rvm\n" >> ~/.bashrc
 
 # install meteor
 curl https://install.meteor.com | /bin/sh
@@ -39,7 +38,7 @@ curl https://install.meteor.com | /bin/sh
 git config --global user.email "khalstvedt@gmail.com"
 git config --global user.name "Kyle Halstvedt"
 
-echo "Customization successfully completed!"
+echo "Setup successfully completed!\nInstalled:\nemacs\nmongodb\nnvm, node\npip, venv\nrvm,ruby\nmeteor"
 
 # enter interactive session to preserve screen session
 exec bash
