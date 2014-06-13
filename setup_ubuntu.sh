@@ -20,7 +20,6 @@ sudo apt-get -y install mongodb-org
 sudo apt-get -y install npm
 curl https://raw.githubusercontent.com/creationix/nvm/v0.7.0/install.sh | sh
 source ~/.nvm/nvm.sh
-printf "source ~/.nvm/nvm.sh\n" >> ~/.bashrc
 nvm install 0.11
 
 # install pip, venv (assumes python 2.7 pre-installed)
