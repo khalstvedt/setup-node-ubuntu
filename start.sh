@@ -8,8 +8,8 @@ if [ -n "$1" ]; then
             # copy setup script
             scp ./setup_ubuntu.sh root@$2:"~/"
 
-            # run script under new 'setup' screen
-            ssh root@$2 "screen -Sdm setup /bin/bash ~/setup_ubuntu.sh"
+            # run script under new 'setup' tmux session
+            ssh -t root@$2 "tmux new -n setup '/bin/bash ~/setup_ubuntu.sh'"
         else
             printf "Remote flag requires an address parameter.\n\n"
         fi
