@@ -11,7 +11,7 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 # install basics
-sudo apt-get -y install emacs git htop
+sudo apt-get -y install git htop emacs
 
 # install mongodb
 sudo apt-get -y install mongodb-org
@@ -37,7 +37,7 @@ curl https://install.meteor.com | /bin/sh
 git config --global user.email "khalstvedt@gmail.com"
 git config --global user.name "Kyle Halstvedt"
 
-printf "\nSetup successfully completed!\n\nInstalled:\nemacs\nmongodb\nnvm, node\npip, venv\nrvm,ruby\nmeteor\n\n"
+printf "\nSetup successfully completed!\n\nInstalled:\ngit\nhtop\nemacs\nmongodb\nnvm, node\npip, venv\nrvm,ruby\nmeteor\n\n"
 
 # enter interactive session to preserve screen session
 exec bash
