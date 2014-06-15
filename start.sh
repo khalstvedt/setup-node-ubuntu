@@ -18,5 +18,5 @@ if [ -n "$1" ]; then
     fi
 else
     printf "Executing local install...\n\n"
-    screen -Sdm setup /bin/bash ./setup_ubuntu.sh
+    tmux new -n setup "/bin/bash ./setup_ubuntu.sh"
 fi
