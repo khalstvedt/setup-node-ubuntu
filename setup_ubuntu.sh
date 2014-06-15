@@ -10,8 +10,8 @@ sudo apt-get -y update
 # install updates
 sudo apt-get -y upgrade
 
-# install emacs and git
-sudo apt-get -y install emacs git
+# install basics
+sudo apt-get -y install emacs git htop
 
 # install mongodb
 sudo apt-get -y install mongodb-org
